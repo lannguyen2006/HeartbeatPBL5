@@ -164,11 +164,11 @@
                 heartRateChart.update();
 
                 // Cập nhật trạng thái
-                document.getElementById('status').innerText = (heartbeat >= 130 || heartbeat <= 50) ? "Tình trạng không ổn" : "Bình thường";
+                document.getElementById('status').innerText = (heartbeat >= 130 || heartbeat <= 50) ? "Nhịp Tim Không Ổn Định" : "Nhịp Tim Bình thường";
 
                 // Cập nhật cảnh báo
                 if (alert === '0') {
-                    document.getElementById('alert').innerText = "Không cảnh báo";
+                    document.getElementById('alert').innerText = "Ông A đang ở khu vực giám sát";
                 } else if (alert === '1') {
                     document.getElementById('alert').innerText = "Ông A đã rời khỏi nơi giám sát";
                 }
